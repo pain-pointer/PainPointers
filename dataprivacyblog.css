@@ -1,0 +1,343 @@
+/* Base Reset and Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fffbe7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header.site-header {
+  background-color: #ffd166;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  border-bottom: 4px dashed #ef476f;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #073b4c;
+  text-shadow: 1px 1px #ffa07a;
+}
+
+/* Blog Title Header */
+body > header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ef476f;
+  padding: 20px;
+  background: #ffd6a5;
+  border-top: 5px solid #06d6a0;
+  border-bottom: 5px solid #118ab2;
+  margin: 0;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background: #fdfcdc;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #073b4c;
+  border-left: 5px solid #ffd166;
+  padding-left: 10px;
+}
+
+/* Funny Story Styling */
+section:nth-of-type(2) {
+  background: #d0f4de;
+  border: 3px dashed #06d6a0;
+  position: relative;
+}
+
+section:nth-of-type(2)::before {
+  content: "🐒 STORY TIME!";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: #06d6a0;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Wrap It Up Section Styling */
+section:last-of-type {
+  background: #ffcad4;
+  border: 4px dotted #ef476f;
+  font-style: italic;
+  position: relative;
+}
+
+section:last-of-type::before {
+  content: "🎉 WRAP IT UP!";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background: #ef476f;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* List Styling */
+ol li,
+ul li {
+  margin-bottom: 15px;
+  background: #fff7e0;
+  padding: 10px;
+  border-left: 5px solid #ffd166;
+  border-radius: 5px;
+}
+
+/* Emphasis Styling */
+strong {
+  color: #ef476f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 45px;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  body > header h1 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+.download-section {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.download-section h2 {
+  color: #ef476f;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.download-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #ff4500;
+}
+
+/* Container layout */
+.privacy-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Left side image */
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  width: 250px; /* You can adjust this */
+  border-radius: 10px;
+}
+
+/* Right side FAQ content */
+.faq-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* FAQ box style */
+.faq {
+  background-color: #fff3cd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 6px solid #ffa502;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ question style */
+.questions {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+/* Chant style */
+.chant {
+  background-color: #fce4ec;
+  padding: 10px;
+  border-left: 4px dashed hotpink;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* Topic heading */
+#TOPIC {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .privacy-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box img {
+    width: 70%;
+  }
+
+  .faq-box {
+    width: 100%;
+  }
+}
+
+/* Feedback Button */
+#feedbackBtn {
+  background-color: #ffcb05;
+  color: #5d3a00;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+#feedbackBtn:hover {
+  transform: scale(1.05);
+  background-color: #ffe066;
+}
+
+/* Modal Background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  animation: popup 0.3s ease-out;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Text Area */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px dashed #ffc107;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+  resize: none;
+}
+
+/* Submit Button */
+.submitBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #45a049;
+}
