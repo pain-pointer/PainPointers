@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me - Pain Pointer</title>
+    <style>
+      /* Funny color combination */
+      :root {
+        --yellow: #ffd93b;
+        --teal: #0b7a75;
+        --orange: #d95d39;
+        --dark-brown: #5b3922;
+        --white: #fff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: var(--yellow);
+        color: var(--teal);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: var(--white);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        height: 60px;
+        width: 60px;
+      }
+
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main img.cover {
+        max-height: 60vh;
+        max-width: 90vw;
+        object-fit: contain;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        margin-top: 0;
+        color: var(--dark-brown);
+      }
+
+      p {
+        max-width: 600px;
+        font-size: 1.1rem;
+        margin: 0 auto 40px auto;
+        color: var(--teal);
+      }
+
+      .funny-quote {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--orange);
+        margin-bottom: 20px;
+      }
+
+      button.back-home {
+        background: var(--teal);
+        color: var(--white);
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        margin-bottom: 20px;
+      }
+
+      button.back-home:hover {
+        background: var(--dark-brown);
+      }
+
+      @media (max-width: 600px) {
+        .funny-quote {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button.back-home {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.webp" alt="Pain Pointer Logo" />
+    </header>
+    <main>
+      <img src="coverpic.webp" alt="Pain Pointer Cover" class="cover" />
+      <div class="funny-quote">"I blog. I post. I pray to algorithm."</div>
+      <h1>About Pain Pointer</h1>
+      <p>
+        Hi! I'm Pain Pointer, your friendly monkey pointing out all the problems
+        so you don't have to! I find the pain, and I help you fix it — with a
+        smile and a laptop in hand. If algorithms could talk, I'd be their
+        favorite blogger by now. Stay tuned for lots of fun, tips, and a little
+        chaos as we solve problems together.
+      </p>
+      <button class="back-home" onclick="window.location.href='index.html'">
+        Back Home
+      </button>
+    </main>
+  </body>
+</html>
